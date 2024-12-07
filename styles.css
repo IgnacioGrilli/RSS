@@ -58,3 +58,53 @@ main ul li {
 main ul li:last-child {
     border-bottom: none;
 }
+
+/* Estilos de la lista de horas */
+#hour-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hour-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.hour {
+    flex: 0 0 100px; /* Ancho fijo para las horas */
+    text-align: left;
+}
+
+.textarea-container {
+    flex: 1; /* Ocupa el espacio restante */
+    padding-left: 10px;
+}
+
+.textarea-container textarea {
+    width: 100%;
+    height: 30px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+textarea:disabled {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.welcome-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4CAF50; /* Un color amigable, como verde */
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
